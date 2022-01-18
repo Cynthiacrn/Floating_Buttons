@@ -1,0 +1,7 @@
+@mixin gradientcolorOne {
+  background-color: linear-gradient(
+    to bottom right,
+    $backgroundcolor2,
+    $backgroundcolor1
+  );
+}

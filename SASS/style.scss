@@ -1,0 +1,58 @@
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "utils/anime.scss";
+
+body {
+  margin-top: 10rem;
+  margin-left: 50%;
+}
+
+.container {
+  display: flex;
+  background-color: $backgroundcolor1;
+  border-radius: 16px;
+  width: 3rem;
+  height: 3rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  a {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .items {
+    display: none;
+  }
+  .plus {
+    color: $primarycolor;
+    border-radius: 20%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  .item1 {
+    color: $secondarycolor;
+  }
+
+  .item2 {
+    color: $terciarycolor;
+  }
+  .item3 {
+    color: $fourthcolor;
+  }
+  .item4 {
+    color: $fifthcolor;
+  }
+}
+
+.container.active {
+  width: 15rem;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  .plus {
+    transform: rotate(45deg);
+    transition-duration: 0.8s;
+  }
+  .items {
+    display: flex;
+    transition-duration: 0.8s;
+  }
+}
