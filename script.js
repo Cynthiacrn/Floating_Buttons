@@ -1,5 +1,5 @@
-const container = document.querySelector('.container');
+const container = document.querySelector(".container");
 
-container.addEventListener('click', () => {
-    container.classList.toggle('active');
-})
+container.addEventListener("click", () => {
+  container.classList.toggle("active");
+});

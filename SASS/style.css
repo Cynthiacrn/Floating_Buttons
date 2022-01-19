@@ -34,25 +34,94 @@
     opacity: 1;
   }
 }
-.container.active > .items {
-  -webkit-animation: itemslide 0.8s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
-          animation: itemslide 0.8s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+@-webkit-keyframes jello {
+  0% {
+    transform: scale(0%);
+  }
+  20% {
+    transform: scale(0%);
+  }
+  50% {
+    transform: scale(130%);
+  }
+  75% {
+    transform: scale(100%);
+  }
+  85% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
+@keyframes jello {
+  0% {
+    transform: scale(0%);
+  }
+  20% {
+    transform: scale(0%);
+  }
+  50% {
+    transform: scale(130%);
+  }
+  75% {
+    transform: scale(100%);
+  }
+  85% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+.container.active > .items {
+  -webkit-animation: itemslide 0.5s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+  animation: itemslide 0.5s cubic-bezier(0.57, 0.13, 0.68, 0.89) both;
+}
+
 .container.active > .items:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.container.active > .items:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.container.active > .items:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.container.active > .items:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.container.container.active > .items > * {
+  -webkit-animation: jello 0.4s ease both;
+          animation: jello 0.4s ease both;
+}
+
+.container.container.active .item1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.container.container.active .item2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-.container.active > .items:nth-child(3) {
+
+.container.container.active .item3 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-.container.active > .items:nth-child(4) {
-  -webkit-animation-delay: 0.8ss;
-          animation-delay: 0.8ss;
-}
-.container.active > .items:nth-child(5) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+
+.container.container.active .item4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 body {
@@ -66,7 +135,7 @@ body {
   border-radius: 16px;
   width: 3rem;
   height: 3rem;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-timing-function: ease;
 }
 .container a {
@@ -79,32 +148,36 @@ body {
 .container .plus {
   color: #55cbd3;
   border-radius: 20%;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-timing-function: ease;
 }
 .container .item1 {
   color: #c7dac7;
+  transform: scale(0);
 }
 .container .item2 {
   color: #ffb68c;
+  transform: scale(0);
 }
 .container .item3 {
   color: #fe8e7b;
+  transform: scale(0);
 }
 .container .item4 {
   color: #ff6787;
+  transform: scale(0);
 }
 
 .container.active {
   width: 15rem;
-  transition-duration: 0.8s;
+  transition-duration: 0.4s;
   transition-timing-function: ease;
 }
 .container.active .plus {
   transform: rotate(45deg);
-  transition-duration: 0.8s;
+  transition-duration: 0.4s;
 }
 .container.active .items {
   display: flex;
-  transition-duration: 0.8s;
+  transition-duration: 0.4s;
 }/*# sourceMappingURL=style.css.map */
