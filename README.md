@@ -1,10 +1,7 @@
 # Création d'un boutton dynamique
 
-
- 
-## Comment utiliser mon application:
-
-Ecrire dans la barre de recherche le nom de pokemon voulu (en anglais): une image, le nom et le type s'affichera.
+ ![Aperçu de mon boutton](./Apercu_1.png)
+ ![Aperçu de mon boutton](./Apercu_2.png)
 
 ## Technologies:
 
